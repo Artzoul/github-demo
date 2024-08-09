@@ -1,0 +1,8 @@
+---
+- name: Example Playbook
+    hosts: all
+    tasks:
+        - name: Create a file
+            ansible.builtin.file:
+                path: /home/artem/git/github-demo/file.txt
+                state: touch
